@@ -49,7 +49,7 @@ HEAD - это указатель на последний залитый комм
 Статусы файлов в Git
 
 ```mermaid
-greaph STATUS;
+graph STATUS;
   untracked -- "git add" --> staged;
   staged -- "git commit" --> tracked;
   tracked -- "изменение" --> modified;
