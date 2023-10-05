@@ -44,3 +44,14 @@ git log --oneline
 ### HEAD
 HEAD - это указатель на последний залитый коммит. Его можно использовать в командах git вместо хеша. Информация о том, какой коммит является 
 головным содежится в файле, расположенном в папке .git
+
+### Жизненный цикл файла
+Статусы файлов в Git
+
+```mermaid
+greaph STATUS;
+  untracked -- "git add" --> staged;
+  staged -- "git commit" --> tracked;
+  tracked -- "изменение" --> modified;
+  modified -- "git add" --> staged;
+```
